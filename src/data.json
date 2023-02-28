@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Noelle Yu",
+    "ageRange": "Early 20s",
+    "adjectives": ["Awkward", "Reserved", "Diligent"],
+    "description": "Senior Noelle is at a crossroads for what she wants to do post-graduation. She's proficient in everything she puts her mind to, but Noelle is struggling to find a focus. She's a double-major in STEM (parental appeasement), but really wants to specialize in art. However, she picks up a hobby that could potentially change that, and drive forward the rest of her twenties.",
+    "actor": "Keiko Agena",
+    "show": "Gilmore Girls",
+    "photoAlignment": "right",
+    "image": "./assets/NoelleYu.jpg"
+  },
+  {
+    "name": "Vanessa Feng",
+    "ageRange": "Mid 20s",
+    "adjectives": ["Intelligent", "Dextrous", "Athletic"],
+    "description": "Having coded since she was in kindergarten, Vanessa has grown into a formidable hacker. However, there is a secret side to her that is able to hold her own in a fight, leading her to be not only the \"girl in the chair,\" but able to fight alongside other vigilantes when they need her to.",
+    "actor": "Jessica Henwick",
+    "show": "Iron Fist",
+    "photoAlignment": "left",
+    "image": "./assets/VanessaFeng.jpg"
+  },
+  {
+    "name": "Angela Lin",
+    "ageRange": "Late 20s",
+    "adjectives": ["Driven", "Cutthroat", "Formidable"],
+    "description": "One of the few women in a major law firm, Angela manages to stand out amongst the other senior associates and is considered a shoo-in for partner. When something tragic happens at home, and her family needs her, her job may be on the line.",
+    "actor": "Sandra Oh",
+    "show": "Grey's Anatomy",
+    "photoAlignment": "right",
+    "image": "./assets/AngelaLin.jpg"
+  }
+]
