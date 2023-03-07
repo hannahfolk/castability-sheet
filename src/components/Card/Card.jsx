@@ -19,7 +19,6 @@ const CardComponent = (props) => {
       style={{
         width: "100%",
         border: "none",
-        margin: "20px 0",
         backgroundColor: "transparent",
         color: "white",
       }}
