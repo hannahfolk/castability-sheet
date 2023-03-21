@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import JsPDF from "jspdf";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 import Button from "react-bootstrap/Button";
@@ -13,12 +12,7 @@ import "./App.css";
 const App = () => {
   const ref = useRef();
 
-  const generatePDF = () => {
-    const pdf = new JsPDF("portrait", "pt", "letter");
-    pdf.html(document.querySelector("#pdf")).then(() => {
-      pdf.save("HannahFolk_CastabilitySheet.pdf");
-    });
-  };
+  const generatePDF = () => {};
 
   return (
     <div
@@ -41,7 +35,6 @@ const App = () => {
             ref={ref}
             style={{
               position: "relative",
-              height: "791px",
               width: "612px",
               cursor: "pointer",
             }}
@@ -54,17 +47,28 @@ const App = () => {
                 height: "100%",
               }}
             />
-            <Container style={{ padding: "30px" }}>
-              <h1
+            <Container style={{ padding: "20px" }}>
+              <h4
                 style={{
                   textAlign: "center",
-                  fontSize: "36px",
                   color: "white",
                   position: "relative",
                 }}
               >
-                Hannah Folk
-              </h1>
+                The Many Faces of
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontSize: "50px",
+                    color: "white",
+                    position: "relative",
+                    fontFamily: "'Tilt Prism', cursive",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  Hannah Folk
+                </p>
+              </h4>
               {data.map((breakdown) => (
                 <Card key={breakdown.name} {...breakdown} />
               ))}

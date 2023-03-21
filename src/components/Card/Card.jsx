@@ -1,9 +1,20 @@
+import fontawesome from "@fortawesome/fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPersonSnowboarding,
+  faComputer,
+  faBriefcase,
+} from "@fortawesome/free-solid-svg-icons";
+
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+fontawesome.library.add(faPersonSnowboarding, faComputer, faBriefcase);
+
 const CardComponent = (props) => {
   const {
+    icon,
     name,
     ageRange,
     adjectives,
@@ -18,9 +29,14 @@ const CardComponent = (props) => {
     <Card
       style={{
         width: "100%",
-        border: "none",
+        border: "1px solid gold",
+        borderRadius: "20px",
         backgroundColor: "transparent",
         color: "white",
+        marginTop: 5,
+        marginBottom: 5,
+        paddingLeft: 10,
+        paddingRight: 10,
       }}
     >
       {photoAlignment === "right" ? (
@@ -28,9 +44,10 @@ const CardComponent = (props) => {
           <Col xs={9}>
             <Card.Body>
               <Card.Title style={{ fontSize: "24px", textAlign: "center" }}>
+                <FontAwesomeIcon icon={icon} style={{ marginRight: "10px" }} />
                 {name}, {ageRange}
               </Card.Title>
-              <Card.Subtitle style={{ fontSize: "20px", textAlign: "center" }}>
+              <Card.Subtitle style={{ fontSize: "18px", textAlign: "center" }}>
                 {adjectives.join(", ")}
               </Card.Subtitle>
               <Card.Text style={{ marginBottom: 0, fontSize: "12px" }}>
@@ -73,9 +90,10 @@ const CardComponent = (props) => {
           <Col xs={9}>
             <Card.Body>
               <Card.Title style={{ fontSize: "24px", textAlign: "center" }}>
+                <FontAwesomeIcon icon={icon} style={{ marginRight: "10px" }} />
                 {name}, {ageRange}
               </Card.Title>
-              <Card.Subtitle style={{ fontSize: "20px", textAlign: "center" }}>
+              <Card.Subtitle style={{ fontSize: "18px", textAlign: "center" }}>
                 {adjectives.join(", ")}
               </Card.Subtitle>
               <Card.Text style={{ marginBottom: 0, fontSize: "12px" }}>

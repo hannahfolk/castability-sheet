@@ -3,30 +3,33 @@
     "name": "Noelle Yu",
     "ageRange": "Early 20s",
     "adjectives": ["Awkward", "Reserved", "Diligent"],
-    "description": "Senior Noelle is at a crossroads for what she wants to do post-graduation. She's proficient in everything she puts her mind to, but Noelle is struggling to find a focus. She's a double-major in STEM (parental appeasement), but really wants to specialize in art. She picks up snowboarding in her last year and discovers a newfound passion and confidence that bleeds into her art.",
+    "description": "Senior Noelle is at a crossroads for what she wants to do post-graduation. She's proficient in everything she puts her mind to, but is struggling to find a focus. She's a majoring in STEM for parental appeasement, but really wants to specialize in art. She picks up snowboarding in her last year and discovers a newfound passion and confidence that beings to bleed into her art.",
     "actor": "Keiko Agena",
     "show": "Gilmore Girls",
     "photoAlignment": "right",
-    "image": "./assets/NoelleYu.jpg"
+    "image": "./assets/NoelleYu.jpg",
+    "icon": "fa-solid fa-person-snowboarding"
   },
   {
     "name": "Vanessa Feng",
     "ageRange": "Mid 20s",
     "adjectives": ["Intelligent", "Dextrous", "Athletic"],
-    "description": "Having coded since she was in kindergarten, Vanessa has grown into a formidable hacker for a private corporation, owned by her mother. However, there is a secret side to her, one that runs alongside a band of vigilantes who takes money from corporations to help the less fortunate. Vanessa operates mainly as a fighter on the field, but because of her coding skills, she can sometimes be the \"girl behind the chair.\" When her team decides to go after her mother's private corporation, she has to decide where her values lie.",
+    "description": "As a prodigious coder, Vanessa now works as a formidable software engineer for her mother's private corporation. On the side, she's been helping a band of vigilantes take money from corporations to aid the less fortunate. When her team uncovers dark truths about her own mother's corporation, she will have to decide where her values lie.",
     "actor": "Jessica Henwick",
     "show": "Iron Fist",
     "photoAlignment": "left",
-    "image": "./assets/VanessaFeng.jpg"
+    "image": "./assets/VanessaFeng.jpg",
+    "icon": "fa-solid fa-computer"
   },
   {
     "name": "Angela Lin",
     "ageRange": "Late 20s",
     "adjectives": ["Driven", "Cutthroat", "Formidable"],
-    "description": "One of the few women in a major law firm, Angela manages to stand out amongst the other senior associates in the mergers and acquisitions department and is considered a shoo-in for partner. When her brother falls victim to medical malpractice and is no longer able to take care of himself, she has to navigate her family suing one of her law firm's clients, causing her partner position to be on the line.",
+    "description": "One of the few women of a major law firm, Angela manages to stand out amongst the other rising associates in the mergers and acquisitions department. When her brother falls victim to medical malpractice and is no longer able to take care of himself, she has to navigate choosing between her family and her job when the former decides to sue one of her law firm's clients, causing her job position to be on the line.",
     "actor": "Sandra Oh",
     "show": "Grey's Anatomy",
     "photoAlignment": "right",
-    "image": "./assets/AngelaLin.jpg"
+    "image": "./assets/AngelaLin.jpg",
+    "icon": "fa-solid fa-briefcase"
   }
 ]
