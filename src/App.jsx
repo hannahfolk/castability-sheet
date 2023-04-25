@@ -1,10 +1,12 @@
 import { useRef } from "react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Card from "./components/Card/Card";
 import Image from "react-bootstrap/Image";
+import html2canvas from "html2canvas";
+import { jsPDF } from "jspdf";
+
+import Card from "./components/Card/Card";
 
 import data from "./data.json";
 import "./App.css";
@@ -12,7 +14,17 @@ import "./App.css";
 const App = () => {
   const ref = useRef();
 
-  const generatePDF = () => {};
+  const generatePDF = () => {
+    const input = document.getElementById("pdf");
+    html2canvas(input, { width: 595, height: 842 }).then(function(canvas) {
+      console.log(canvas);
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF("portrait", "pt", "A4");
+      pdf.addImage(imgData, "JPEG", 0, 0);
+      // pdf.output('dataurlnewwindow');
+      pdf.save("HannahFolk_CastabilitySheet.pdf");
+    });
+  };
 
   return (
     <div
@@ -35,7 +47,8 @@ const App = () => {
             ref={ref}
             style={{
               position: "relative",
-              width: "612px",
+              width: "595px",
+              height: "842px",
               cursor: "pointer",
             }}
           >

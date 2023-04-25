@@ -68,7 +68,11 @@ const CardComponent = (props) => {
           >
             <Card.Img
               src={image}
-              style={{ border: "2px solid gold", borderRadius: "20px" }}
+              style={{
+                border: "2px solid gold",
+                borderRadius: "20px",
+                filter: "drop-shadow(2px 2px 4px #080816)",
+              }}
             />
           </Col>
         </Row>
@@ -84,7 +88,11 @@ const CardComponent = (props) => {
           >
             <Card.Img
               src={image}
-              style={{ border: "2px solid gold", borderRadius: "20px" }}
+              style={{
+                border: "2px solid gold",
+                borderRadius: "20px",
+                filter: "drop-shadow(2px 2px 4px #080816)",
+              }}
             />
           </Col>
           <Col xs={9}>
