@@ -29,14 +29,13 @@ const CardComponent = (props) => {
     <Card
       style={{
         width: "100%",
-        border: "1px solid gold",
+        border: "2px solid gold",
         borderRadius: "20px",
         backgroundColor: "transparent",
         color: "white",
-        marginTop: 5,
-        marginBottom: 5,
-        paddingLeft: 10,
-        paddingRight: 10,
+        marginTop: 20,
+        marginBottom: 20,
+        padding: "10px 30px",
       }}
     >
       {photoAlignment === "right" ? (

@@ -47,8 +47,8 @@ const App = () => {
             ref={ref}
             style={{
               position: "relative",
-              width: "595px",
-              height: "842px",
+              width: "765px",
+              height: "990px",
               cursor: "pointer",
             }}
           >
